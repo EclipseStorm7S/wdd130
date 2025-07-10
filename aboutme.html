@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Showers Home Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/Logo Transparent.png" alt="EclipseStorm Logo">
+        <h1>Ethan Showers</h1>
+    </header>
+    <nav>
+        <!-- I want this bit to be collapsable if I can manage it. -->
+        <a href="/">Home</a>
+        <a href="wwr" target="_blank">WWR</a>
+        <!-- <a href="ice/index.html">ICE</a> -->
+        <a href="/#projectWrapper">ICE</a>
+        <a href="aboutme.html" >About Me</a>
+    </nav>
+    <main>
+        <div class="about">
+            <img src="images/IMG_2941.jpg" alt="Picture of me">
+            <h2>About me</h2>
+            <p>
+                My name is Ethan Showers. I'm a 21 year old computer science major. I go by the username <em>EclipseStorm</em> on most platforms. I like to program, draw, read, and write. My favorite color is yellow, despite that color being entirely absent from this page.
+            </p>
+            <p>
+                You may notice that this page is nearly identical to my portal page. That is because I really don't have much else to talk about. I've never really been one to talk about myself. Sorry if you were hoping to learn more about me. Instead, here's a cool desktop I use!
+            </p>
+            <a href="images/PhotoEStormPix.png" target="_blank"><img src="images/PhotoEStormPix.png" alt="Picture of me"></a>
+        </div>
+        <div class="contact">
+            <table class="ContactInfo">
+                <tr>
+                    <td>Email:</td>
+                    <td>sho22005@byui.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>101001100101001011</td>
+                </tr>
+                <tr>
+                    <td>Discord:</td>
+                    <td>@EclipseStorm</td>
+                </tr>
+            </table>
+            <form>
+                <h3>Contact me!</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et esse sed soluta! Veniam iste quo quod aliquid autem molestiae unde ullam modi praesentium voluptate a, perferendis quaerat eveniet provident.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Ethan Showers, 2025</p>
+    </footer>
+
+    <script>
+        document.getElementById("toggleshrink").addEventListener("click", function () {
+            if (document.getElementById("toggleshrink").innerHTML == "<b>V</b>"){
+                document.getElementById("toggleshrink").innerHTML = "<b>^</b>";
+                document.getElementById("projectWrapper").classList.toggle("small");
+            } else {
+                document.getElementById("toggleshrink").innerHTML = "<b>V</b>";
+                document.getElementById("projectWrapper").classList.toggle("small");
+            }
+         });
+    </script>
+
+</body>
+</html>

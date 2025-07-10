@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Showers Home Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/Logo Transparent.png" alt="EclipseStorm Logo">
+        <h1>Ethan Showers</h1>
+    </header>
+    <nav>
+        <!-- I want this bit to be collapsable if I can manage it. -->
+        <a href="/">Home</a>
+        <a href="wwr" target="_blank">WWR</a>
+        <!-- <a href="ice/index.html">ICE</a> -->
+        <a href="#projectWrapper">ICE</a>
+        <a href="aboutme.html">About Me</a>
+    </nav>
+    <main>
+        <div class="about">
+            <img src="images/IMG_2941.jpg" alt="Picture of me">
+            <h2>Welcome to my portal page!</h2>
+            <p>
+                My name is Ethan Showers. I'm a 21 year old computer science major, and this is my portal page. Here, you will find links to various projects, an "about me" page, and some other stuff. If you see <em>this</em> sentence, use the form at the bottom of the page to tell me I didn't change my placeholder text.
+            </p>
+        </div>
+        <div id="projectWrapper" class="small">
+            <a href="wwr" target="_blank">
+                <section class="project">
+                    <img src="images/dryoarlogo.png" alt="WWW icon">
+                    <h3>WWR</h3>
+                    <p>
+                        A mock-up for a White Water Rafting homepage that I made for WDD130.
+                    </p>
+                </section>
+            </a>
+            <a href="ice/apostle_spotlight/apostles.html" target="_blank">
+                <section class="project">
+                    <img src="ice/apostle_spotlight/ApostleSpotlight_Design.png" alt="">
+                    <h3>ICE: Apostle Spotlight</h3>
+                    <p>
+                        A gallery of all the current apostles!
+                    </p>
+                </section>
+            </a>
+            <a href="ice/prophet_cards/nelson.html" target="_blank">
+                <section class="project">
+                    <img src="ice/prophet_cards/images/russell_nelson.png" alt="">
+                    <h3>ICE: Prophet Card</h3>
+                    <p>
+                        An info card for President Nelson.
+                    </p>
+                </section>
+            </a>
+            <a href="ice/gallery/gallery.html" target="_blank">
+                <section class="project">
+                    <img src="ice/gallery/images/small/img1.jpg" alt="">
+                    <h3>ICE: Gallery</h3>
+                    <p>
+                        A gallery of pictures of Jesus.
+                    </p>
+                </section>
+            </a>
+            <a href="ice/fathersday" target="_blank">
+                <section class="project">
+                    <img src="ice/fathersday/images/fathersday.png" alt="">
+                    <h3>ICE: Father's Day</h3>
+                    <p>
+                        Celebrate Father's day!
+                    </p>
+                </section>
+            </a>
+            <a href="ice/grid_flags/flags.html" target="_blank">
+                <section class="project">
+                    <img src="ice/grid_flags/Greeland.png" alt="">
+                    <h3>ICE: Grid Flags</h3>
+                    <p>
+                        Flags made entirely with css!
+                    </p>
+                </section>
+            </a>
+            <a href="ice/favorite_devo/favdevo.html" target="_blank">
+                <section class="project">
+                    <img src="ice/favorite_devo/images/icenter.png" alt="">
+                    <h3>ICE: Favorite Devotionals</h3>
+                    <p>
+                        A list of my favorite devotionals!
+                    </p>
+                </section>
+            </a>
+            <a href="ice/positioning/positioning.html" target="_blank">
+                <section class="project">
+                    <img src="ice/positioning/icon.png" alt="">
+                    <h3>ICE: Positioning</h3>
+                    <p>
+                        Grid positioning challenges with css!
+                    </p>
+                </section>
+            </a>
+            <a href="ice/signup/signup.html" target="_blank">
+                <section class="project">
+                    <img src="ice/signup/images/jesus_feeds_5000.jpeg" alt="">
+                    <h3>ICE: Signup</h3>
+                    <p>
+                        Sign up for a newsletter! (Not real)
+                    </p>
+                </section>
+            </a>
+            <a href="flappyAi" target="_blank">
+                <section class="project">
+                    <img src="images/Logo Transparent.png" alt="Flappy AI icon">
+                    <h3>Flappy AI</h3>
+                    <p>
+                        In highschool, I made a neural network learn to play flappy bird! It sucks at it, but it learns eventually!
+                    </p>
+                </section>
+            </a>
+            <a href="https://eclipsestorm.itch.io" target="_blank">
+                <section class="project">
+                    <img src="images/itchlogo.png" alt="Itch.io icon">
+                    <h3>Itch</h3>
+                    <p>
+                        My Itch.io user page, full of very old projects.
+                    </p>
+                </section>
+            </a>
+        </div>
+        <div id="shrinkwrap">
+            <button type="button" id="toggleshrink"><b>V</b></button>
+        </div>
+        <div class="contact">
+            <table class="ContactInfo">
+                <tr>
+                    <td>Email:</td>
+                    <td>sho22005@byui.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>1101001011010011</td>
+                </tr>
+                <tr>
+                    <td>Discord:</td>
+                    <td>@EclipseStorm</td>
+                </tr>
+            </table>
+            <form>
+                <h3>Contact me!</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure et esse sed soluta! Veniam iste quo quod aliquid autem molestiae unde ullam modi praesentium voluptate a, perferendis quaerat eveniet provident.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Ethan Showers, 2025</p>
+    </footer>
+
+    <script>
+        document.getElementById("toggleshrink").addEventListener("click", function () {
+            if (document.getElementById("toggleshrink").innerHTML == "<b>V</b>"){
+                document.getElementById("toggleshrink").innerHTML = "<b>^</b>";
+                document.getElementById("projectWrapper").classList.toggle("small");
+            } else {
+                document.getElementById("toggleshrink").innerHTML = "<b>V</b>";
+                document.getElementById("projectWrapper").classList.toggle("small");
+            }
+         });
+    </script>
+
+</body>
+</html>

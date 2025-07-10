@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */ 
+        body {
+            background-color: #e8eced;
+            font-family: Arial;
+            display:flex;
+            justify-content: center;
+        }
+        .wrapper {
+            background-image: url(images/christus.webp);
+            background-size: cover;
+            background-position: -210px 0px;
+            border: 5px solid black;
+            border-radius: 30px;
+            width: 700px;
+            text-align: center;
+            color: white;
+            padding: 5px;
+        }
+        .header {
+            font-size: 2.2em;
+            margin: 10px;
+            transition: transform 1s ease-out;
+        }
+        .header:hover {
+            transition: transform 100s ease-in;
+            transform: translate(0,2000px) rotate(360deg);
+        }
+        .midder {
+            font-size: 1.5em;
+        }
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .big, .mid, .small{
+            display: inline-block;
+            border: 6px solid white;
+            border-radius: 90px;
+            overflow: hidden;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+        }
+        .big:hover, .mid:hover, .small:hover{
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+        }
+        .big {
+            width: 100px;
+            height: 100px;
+        }
+        .big:hover{
+            border-color: gold;
+        }
+        .mid {
+            width: 90px;
+            height: 90px;
+        }
+        .mid:hover{
+            border-color: darkcyan;
+        }
+        .small {
+            width: 80px;
+            height: 80px;
+        }
+        .small:hover{
+            border-color: green;
+        }
+        .flip, .spin, .turn, .return{
+            display: inline-block;
+            margin-inline: 10px;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+        .turn{
+            margin-bottom: 10px;
+        }
+        .flip:hover, .spin:hover, .turn:hover, .return:hover{
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+        .flip:hover{
+            transform: translate(0,-20px) rotateX(360deg) scale(1.5);
+        }
+        .spin:hover{
+            transform: translate(0,-20px) rotateY(360deg) scale(1.5);
+        }
+        .turn:hover{
+            transform: translate(0,-20px) rotateZ(360deg) scale(1.5);
+        }
+        .return:hover{
+            transform: translate(0,-20px) rotateZ(-360deg) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="header">First Presidency<p>
+        <!-- Images -->
+         <span class="flip"><span class="mid"><img src="images/oaks.webp"></span></span>
+         <span class="spin"><span class="big"><img src="images/nelson.webp"></span></span>
+         <span class="flip"><span class="mid"><img src="images/eyring.webp"></span></span>
+         <p class="midder">Quorum of the Twelve Apostles</p>
+         <span class="return"><span class="small"><img src="images/holland.webp"></span></span>
+         <span class="turn"><span class="small"><img src="images/uchtdorf.webp"></span></span>
+         <span class="return"><span class="small"><img src="images/bednar.webp"></span></span>
+         <span class="turn"><span class="small"><img src="images/cook.webp"></span></span>
+         <br>
+         <span class="return"><span class="small"><img src="images/christofferson.webp"></span></span>
+         <span class="turn"><span class="small"><img src="images/anderson.webp"></span></span>
+         <span class="return"><span class="small"><img src="images/rasband.webp"></span></span>
+         <span class="turn"><span class="small"><img src="images/renlund.webp"></span></span>
+         <br>
+         <span class="turn"><span class="small"><img src="images/stevenson.webp"></span></span>
+         <span class="return"><span class="small"><img src="images/gong.webp"></span></span>
+         <span class="turn"><span class="small"><img src="images/soares.webp"></span></span>
+         <span class="return"><span class="small"><img src="images/kearon.webp"></span></span>
+         <br>
+    </div>
+</body>
+</html>

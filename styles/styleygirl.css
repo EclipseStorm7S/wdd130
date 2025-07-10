@@ -1,0 +1,207 @@
+body{
+    background: ivory;
+    background-image: url(../images/PhotoEStormPix.png); 
+    /*background-repeat: repeat;*/
+    background-size: cover;
+}
+
+#wrapper {
+    background: teal;
+    max-width: 1200px;
+    margin: auto;
+    border: 3px solid #ffbf00;
+    border-radius: 10px;
+    /*padding: 20px;*/
+    display: grid; /*turns this into the parent object of the grid. It's children are part of the grid.*/
+}
+
+header {
+    background-image: url(../images/parchment.jpg);
+    border-radius: 5px;
+    background-position: -40px 0px;
+    background-size: cover;
+    padding: 20px;
+}
+
+header img  {
+    width: 100px;
+}
+
+header h1 {
+    display: inline;
+    font-size: 3em; /*3 times bigger*/
+    float: right;
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    background: limegreen;
+    width: 100%;
+    height: 60px;
+    border: 4px solid darkgreen;
+    box-sizing: border-box; /* include border size in the "width" property*/
+    display: flex; /*allows justification, but only in on direction. Horiz or vert*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+nav a {
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: darkblue;
+    /*
+    padding-left:5px;
+    padding-right:5px;
+    */
+    text-align: center;
+    padding: 0px 5px; /*TB RL, or T R B L*/
+}
+
+nav a:hover {
+    color: gold;
+    font-size: 3em;
+    background-color: black;
+    text-shadow: 2px 2px 2px darkgoldenrod ;/*horiz, vert, blur, color*/
+}
+
+.content {
+  background-color: blue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*Each collumn is 1... part... wide. */
+}
+
+footer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(../images/parchment.jpg);
+  color: black;
+}
+
+footer form {
+    background: rgba(128, 255, 0, 0.6);
+    /* width: 200px; */
+    padding: 10px;
+    border: 3px dotted purple;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    height: 30px;
+    overflow: hidden;
+    transition: height .85s ease-in;
+}
+
+footer form:hover {
+  height: 200px;
+  transition: height .85s ease-in;
+}
+
+footer form h3 {
+  grid-column: 1 / 3;
+}
+
+footer p {
+  grid-column: 1 / 3;
+  justify-self: center;
+}
+
+section {
+    border: 3px solid red;
+    padding: 10px 20px;
+    background: lightblue;
+    margin: 5px;
+}
+
+section:hover {
+    border: 3px solid lightblue;
+    background: red;
+}
+
+section img{
+    width:100%;
+}
+
+table { /*https://divtable.com/table-styler/*/
+  grid-column: 1 / 2; /*goes from start of col1 to start of col2*/
+}
+
+table.blueTable {
+    border: 1px solid #1C6EA4;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #F5516E;
+}
+table.blueTable td:nth-child(even) {
+  background: #E83CF5;
+}
+table.blueTable thead {
+  background: #21A427;
+  background: -moz-linear-gradient(top, #58bb5d 0%, #37ad3c 66%, #21A427 100%);
+  background: -webkit-linear-gradient(top, #58bb5d 0%, #37ad3c 66%, #21A427 100%);
+  background: linear-gradient(to bottom, #58bb5d 0%, #37ad3c 66%, #21A427 100%);
+  border-bottom: 2px solid #5556A5;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: 745px){ /*The css in this block only applies if the width is 745px or less*/
+  
+  main {
+    display: block;
+  }
+  table {
+    width:  100%;
+  }
+  header{
+    padding: 0px;
+    text-align: center;
+  }
+  header h1{
+    font-size: 2em;
+    float: none;
+    margin: 3px;
+  }
+  header img {
+    position: absolute;
+    top:40px;
+    left:15px;
+  }
+  nav {
+    display: block;
+    height: unset;
+  }
+  nav a{
+    justify-content: center;
+    padding: 0%;
+  }
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | FlappyAI</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=device-width height=device-height style="width: 95%; height: 95%; margin: 0; background: #231F20"></canvas>
+    <script src="Build/FlappyAI.loader.js"></script>
+    <script>
+      var canvas = document.getElementById("unity-canvas");
+      canvas.width  = window.innerWidth *0.95;
+      canvas.height = window.innerHeight *0.95;
+      window.addEventListener('resize', resizeCanvas, false);
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        redraw();
+      }
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/FlappyAI.data",
+        frameworkUrl: "Build/FlappyAI.framework.js",
+        codeUrl: "Build/FlappyAI.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "EclipseStorm",
+        productName: "FlappyAI",
+        productVersion: "1.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
