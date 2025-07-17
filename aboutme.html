@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <img src="images/Logo Transparent.png" alt="EclipseStorm Logo">
-        <h1>Ethan Showers</h1>
-    </header>
-    <nav>
-        <!-- I want this bit to be collapsable if I can manage it. -->
-        <a href="/">Home</a>
-        <a href="wwr" target="_blank">WWR</a>
-        <!-- <a href="ice/index.html">ICE</a> -->
-        <a href="/#projectWrapper">ICE</a>
-        <a href="aboutme.html" >About Me</a>
-    </nav>
+    <div id="header"></div>
     <main>
         <div class="about">
             <img src="images/IMG_2941.jpg" alt="Picture of me">
@@ -66,15 +55,13 @@
     </footer>
 
     <script>
-        document.getElementById("toggleshrink").addEventListener("click", function () {
-            if (document.getElementById("toggleshrink").innerHTML == "<b>V</b>"){
-                document.getElementById("toggleshrink").innerHTML = "<b>^</b>";
-                document.getElementById("projectWrapper").classList.toggle("small");
-            } else {
-                document.getElementById("toggleshrink").innerHTML = "<b>V</b>";
-                document.getElementById("projectWrapper").classList.toggle("small");
-            }
-         });
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                });
+        });
     </script>
 
 </body>
